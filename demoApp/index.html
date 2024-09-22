@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontToGeoJSON</title>
+</head>
+<body>
+    <div id="mainDiv">
+            
+        <div id="div2">
+            <div id="map"></div>
+        </div>
+
+        <div id="div1">
+            <h3>TextToGeoJSON</h3>
+            <p>Convert text to geojson format</p>
+            <label id="maplabel" for="MapType">Choose basemap:</label>
+            <select name="MapType" id="mapType">
+                <option value="1">OSM Standard</option>
+                <option value="2">ESRI World Imagery</option>
+            </select>
+            <p>Enter Text:</p>
+            <input type="text" id="textBox" name="Enter Text"/>
+            <p>Enter Anchor Point (Lon,Lat): </p>
+            <input type="text" id="anchorPoint" name="Enter anchor point"/>
+            <p>Enter Text Size:</p>
+            <input type="text" id="sizeBox" name="Enter Size"/>
+            <label for="smoothSlider">Smoothness (Quadratic Bezier curve smoothness, 1 to 10)</label>
+            <input type="range" id="smoothSlider" name="smoothness" min="1" max="10" step="1" />
+            <br/>
+            <button id="convertBtn">Convert</button>
+            <br></br>
+            <button id="downloadBtn">Download GeoJSON</button>
+            <button id="clearBtn">Clear All</button>
+        </div>
+        
+    </div>
+    
+    
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

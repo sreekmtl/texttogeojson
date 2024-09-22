@@ -1,0 +1,16 @@
+{
+  "name": "texttogeojson",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Convert text into geojson vector files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sreekmtl",
+  "license": "ISC",
+  "dependencies": {
+    "opentype.js": "^1.3.4"
+  }
+}
