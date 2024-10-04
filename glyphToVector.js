@@ -1,4 +1,4 @@
-import { getQuadraticBezierCurve } from "./spatialBezierCurve.js";
+import { getBezierCurve } from "./spatialBezierCurve.js";
 
 /**
  * 
@@ -87,13 +87,30 @@ function toSpatialCoordinates(glyphPath,startPoint,smoothness){
             let p0= ring[ring.length-1]; //start point
             let p2= [x0+el.x, y0-el.y] //end point
 
-            let Q= getQuadraticBezierCurve(p0,p2, p1,smoothness);
+            let Q= getBezierCurve(p0,p2, [p1],smoothness);
             Q.forEach(el=>{
                 ring.push(el);
             })
             
             let coords= [x0+el.x, y0-el.y];
             ring.push(coords);
+        }
+        else if (el.type==='C'){
+
+            //Take the control points, start and end coords, calculate 't'. Then use the t and start and end coords to generate curve
+            let p1= [x0+el.x1, y0-el.y1]; //control point 1
+            let p2= [x0+el.x2, y0-el.y2]; //control point 2
+
+            let p0= ring[ring.length-1]; //start point
+            let p3= [x0+el.x, y0-el.y]; //end point
+
+            let C= getBezierCurve(p0,p3, [p1,p2], smoothness);
+            C.forEach(el=>{
+                ring.push(el);
+            })
+            let coords= [x0+el.x, y0-el.y];
+            ring.push(coords);
+        
         }else if (el.type==='Z'){
             rings.push(ring);
             ring=[];
