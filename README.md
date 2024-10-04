@@ -29,6 +29,6 @@ options= {
 I haven't tested all kinds of fonts yet. Right now it only reads M,L,Q and Z of glyph paths. So complex fonts won't get perfectly converted. 
 
 ## 3. Screenshots
-![alt text](https://github.com/sreekmtl/texttogeojson/blob/main/preview/ss-4.png)
-![alt text](https://github.com/sreekmtl/texttogeojson/blob/main/preview/ss-5.png)
-![alt text](https://github.com/sreekmtl/texttogeojson/blob/main/preview/ss-6.png)
+![alt text](https://github.com/sreekmtl/textToGeoJSON-demo/blob/main/preview/ss-4.png)
+![alt text](https://github.com/sreekmtl/textToGeoJSON-demo/blob/main/preview/ss-5.png)
+![alt text](https://github.com/sreekmtl/textToGeoJSON-demo/blob/main/preview/ss-6.png)
