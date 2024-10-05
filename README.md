@@ -7,7 +7,7 @@ Live demo app: https://sreekmtl.github.io/textToGeoJSON-demo/
 ## 1. Usage
 
 ```bash
-import textToGeoJSON from 'texttogeojson/index.js'
+import textToGeoJSON from 'texttogeojson'
 
 await textToGeoJSON(text, fontPath, anchorPoint, options).then(geojson=>{
 //rest of the code
