@@ -16,7 +16,7 @@ await textToGeoJSON(text, fontPath, anchorPoint, options).then(geojson=>{
 ### Arguments:
 
 - `text` : String to convert
-- `fontPath` : path to ttf of otf files
+- `fontPath` : path to ttf/otf files
 - `anchorPoint` : [X, Y] Only supports EPSG:3857 (Web mercator projection) as of now
 - `options` : { 
         textSize: Number,
