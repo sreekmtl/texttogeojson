@@ -6,7 +6,7 @@ Live demo app: https://sreekmtl.github.io/textToGeoJSON-demo/
 
 ## 1. Usage
 
-```bash
+```js
 import textToGeoJSON from 'texttogeojson'
 
 await textToGeoJSON(text, fontPath, anchorPoint, options).then(geojson=>{
@@ -15,15 +15,15 @@ await textToGeoJSON(text, fontPath, anchorPoint, options).then(geojson=>{
 ```
 ### Arguments:
 
-```
-text : 'String you want to convert'
-fontPath : '/path/to/your/ttf/file'
-anchorPoint : [Longitude, Latitude]
-options= {
-    textSize: Number,
-    smoothness: Number (Number of points in a bezier curve)
+- `text` : String to convert
+- `fontPath` : path to ttf of otf files
+- `anchorPoint` : [X, Y] Only supports EPSG:3857 (Web mercator projection) as of now
+- `options` : { 
+        textSize: Number,
+        smoothness: Number (Number of points in a bezier curve)
 }
-```
+
+
 ## 2. Warnings
 
 I haven't tested all kinds of fonts yet. Right now it only reads M,L,Q, C and Z of glyph paths. Only tested with ttf and otf fonts yet. 
