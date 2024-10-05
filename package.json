@@ -7,10 +7,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["text", "font", "geojson", "gis", "conversion"],
+  "keywords": [
+    "text",
+    "font",
+    "geojson",
+    "gis",
+    "conversion"
+  ],
   "author": "sreekmtl",
   "license": "ISC",
   "dependencies": {
     "opentype.js": "^1.3.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreekmtl/texttogeojson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sreekmtl/texttogeojson/issues"
+  },
+  "homepage": "https://github.com/sreekmtl/texttogeojson#readme"
 }
